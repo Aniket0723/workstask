@@ -1,0 +1,123 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin: 100px 200px;
+    column-gap: 100px;
+    position: relative;
+}
+
+.logog {
+    height: 10em;
+    padding: 1.5em;
+    margin-left: 60px;
+    margin-top: -50px;
+}
+
+.fLists {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    column-gap: 30px;
+
+
+}
+
+.fList {
+    list-style: none;
+    padding: 0;
+    font-weight: 700;
+
+
+}
+
+.listHeading {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.fListItem {
+    margin-bottom: 10px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 15px;
+    column-gap: 50px;
+}
+
+.fText {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 10px;
+    font-size: 25px;
+
+}
+
+.icons li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(221, 123, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        margin: 50px 10px; /* Adjusted margin for smaller screens */
+        flex-direction: column; /* Changed flex direction to column for smaller screens */
+        align-items: center;
+        text-align: center;
+      }
+    
+      .logog {
+        height: 6em; /* Reduced height for smaller screens */
+        padding: 0.5em; /* Reduced padding for smaller screens */
+        margin: 0;
+      }
+    
+      .fLists {
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+      }
+    
+      .listHeading {
+        margin-bottom: 5px; /* Adjusted margin for smaller screens */
+        font-size: 12px; /* Reduced font size for smaller screens */
+      }
+    
+      .fListItem {
+        margin-bottom: 3px; /* Adjusted margin for smaller screens */
+        font-size: 10px; /* Reduced font size for smaller screens */
+      }
+    
+      .fText {
+        font-size: 16px; /* Reduced font size for smaller screens */
+      }
+    
+      .icons {
+        margin: 10px;
+        column-gap: 5px; /* Adjusted column gap for smaller screens */
+        font-size: 15px; /* Reduced font size for smaller screens */
+      }
+    
+      .icons li {
+        width: 25px; /* Reduced width for smaller screens */
+        height: 25px; /* Reduced height for smaller screens */
+        font-size: 15px; /* Reduced font size for smaller screens */
+      }
+}

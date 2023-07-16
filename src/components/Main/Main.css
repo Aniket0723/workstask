@@ -1,0 +1,169 @@
+.wrapper {
+    margin: 150px 200px;
+  }
+  
+  .filterMethod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: brown;
+    text-decoration: none;
+  }
+  
+  select {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: brown;
+  }
+  
+  input {
+    width: 200px;
+    height: 26px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: brown;
+  }
+  
+  select option {
+    width: 200px;
+  }
+  
+  .accordion-main {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .panel {
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    padding-left: 20px;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    background-color: #eee8e8;
+  }
+  
+  .panel.expanded {
+    max-height: 500px;
+    padding-bottom: 10px;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-top: -20px;
+    color: rgb(153, 133, 133);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .content-wrapper {
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .content-wrapper p {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      margin: 5px 100px;
+    }
+  
+    .filterMethod {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-weight: 700;
+      color: brown;
+      text-decoration: none;
+    }
+  
+    select {
+      width: 150px;
+      height: 30px;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      color: brown;
+    }
+  
+    input {
+      width: 150px;
+      height: 26px;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      color: brown;
+    }
+  
+    select option {
+      width: 200px;
+    }
+  
+    .accordion-main {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+  
+    .panel {
+      border: 1px solid #ccc;
+      padding-top: 5px;
+      padding-left: 10px;
+      margin: 1px 10px;
+      transition: max-height 0.3s ease;
+      overflow: hidden;
+      background-color: #eee8e8;
+    }
+  
+    .panel.expanded {
+      max-height: 500px;
+      padding-bottom: 10px;
+    }
+  
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      cursor: pointer;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  
+    .subtitle {
+      padding-left: 15px;
+      padding-top: 15px;
+      margin-top: -20px;
+      color: rgb(153, 133, 133);
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  
